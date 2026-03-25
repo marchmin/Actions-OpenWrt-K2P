@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt/tree/openwrt-23.05
+  REPO_URL: https://github.com/coolsnowwolf/lede/tree/20230609
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -72,7 +72,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+      run: cd 20230609 && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
