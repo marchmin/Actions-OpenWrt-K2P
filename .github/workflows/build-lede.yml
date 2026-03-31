@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/marchmin/lede
   REPO_BRANCH: 20230609
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: K2P.config
